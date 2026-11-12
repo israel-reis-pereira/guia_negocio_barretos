@@ -1,0 +1,19 @@
+---
+import AboutView from '@/components/pages/views/AboutView.astro';
+import { getSecondaryLocales } from '@/i18n';
+
+// Página About com prefixo de locale (`/<locale>/about`). Uma página para cada
+// locale não padrão. Não gera nada quando o i18n está desativado ou apenas um
+// locale está configurado, portanto os builds de um único locale permanecem
+// inalterados. Caso um locale ainda não tenha sido traduzido, usa como fallback
+// o locale padrão, para que o LanguageSwitcher nunca direcione para um 404 e
+// a página nunca fique em branco.
+
+export function getStaticPaths() {
+  return getSecondaryLocales().map((locale) => ({ params: { locale } }));
+}
+
+const { locale } = Astro.params;
+---
+
+<AboutView locale={locale} />

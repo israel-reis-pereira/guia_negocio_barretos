@@ -1,0 +1,12 @@
+---
+import ContactView from '@/components/pages/views/ContactView.astro';
+import { getSecondaryLocales } from '@/i18n';
+
+export function getStaticPaths() {
+  return getSecondaryLocales().map((locale) => ({ params: { locale } }));
+}
+
+const { locale } = Astro.params;
+---
+
+<ContactView locale={locale} />

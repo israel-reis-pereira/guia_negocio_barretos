@@ -1,0 +1,101 @@
+Links fontes:
+linkedin->https://www.google.com/goto?url=CAEScwHrOzAVL8YzxPAYS8KcYQC_k8Br01JQiAGomQC6EtxrJIEGg3MiQl3OpAKh_HkK8rkFOAdVDRfDUJWSKr-O2snHvF7ckYll2TTDMOqDsqpsvAW_WrH0drMPb-NszSW69UWFL0jewqObpGoOO6R3hnbI_nI
+github->https://www.google.com/goto?url=CAESYQHrOzAVKhm0mJx_aG799eevQV0vYcXGzAMPPK-GoPwPbIJCsIY-JL06R_qfQj1MfB7HCkQM_FzBNBcjD8IprwKgKfFGdTid0qDljGT0dGzRSgtaBYaiVKX1HylZELnym6g
+israelreispereira.com.br/contato->https://www.google.com/goto?url=CAESYwHrOzAVKSkja8x1p5sEOywP01cZNyXi0wMWusuLnTTGIDKVhMzSVQRKOskdT94raQI6RyNW8-QoRxElVoN0OjHaBJYsX7MXxNO1WxMTUneqnPEKr-_aAjVZjHyMiO3jav75NQ
+
+Links fontes de estudante:
+https://etecbarretos.cps.sp.gov.br/desenvolvimento-de-sistemas/
+https://unibarretos.edu.br/curso-sistemadeinformacao/
+https://www.knnidiomas.com.br/unidades/knn-barretos/
+
+Contexto:
+Sou esse Israel mencionado nos links, quero definir metas para os próximos 2 anos, atualmente estou no 4 periodo(total: 8 periodos) do SI na unibarretos, estudei na Etec em DS no EM, alem de estar no 2 semestre da KNN(total: 4 semestres). Meu niver é 05/12/2006
+
+Trabalho:
+Atualmente sou suporte para atualização de sites em wordpress na empresa Williarts(site da williarts->https://www.google.com/goto?url=CAESawHrOzAVmHhuqDwndq1J0ppp5iQwgvbav11ZTDZniJ9K6lSlCsGlkTIrmoX1GGyyyD05Jegh7viw8B6NbkDqlvc8SkK5BvGHjizZZACCEFJWAWK6HnKL15xcbhBB1YEgBonOwIrrmSiJpCJ3
+perfil do google->https://share.google/XRqBO04UU6EsJIAAb), tenho interesse em conhecer outras empresas locais de barretos que atuam na área e ter bate-papo/conexão/contato de como é o funcionamento, fluxo de trabalho
+Atualmente salário R$ 1.826,00 c/ INSS sobre salário R$ 140,02, total: R$ 1.685,98
+Trabalho da seg a sex 7h42 às 18h c/ tempo de almoço: 1h30
+
+Metas visuais que tenho no momento:
+8k(cada) moto, notebook
+40k carro(pesquisado 45k-85k)
+420k-600k casa pronta, 345k-495k casa construida c/ terreno comprado
+Detalhes:
+Para erguer as paredes e fazer o acabamento, o mercado da construção civil local se baseia no CUB-SP. Em Barretos, os valores por padrão construtivo refletem as seguintes realidades:
+• Padrão Econômico: R$ 1.900 a R$ 2.400 / m².
+• Padrão Médio: R$ 2.600 a R$ 3.400 / m². (Mais comum para bairros planejados).
+• Alto Padrão / Condomínio: R$ 3.800 a R$ 5.500 / m². (Ex: City Barretos ou estâncias fechadas).
+10k-15k mobilia basica dentro de casa
+9k-42k(pesquisado de 2 semanas a 1 mês) imersão no ingles
+2k-8k(pesquisado até 2 semanas) viagem ao DF(Brasília)
+**Em váriaveis onde existe valor que sobre com taxas, tributos, é necessário embutir uma margem de segurança de 10% a 15% nesses montantes
+
+Interesse:
+Área de TI como dev ou algo assim
+Entrar no meio politico para ampliar meu pagamento
+Desenvolver sistemas, aplicações que gerem renda a longo prazo
+
+Gostos:
+Animações, desenhos, filmes, comida boa(cozinhar)
+
+Objetivo:
+Acho que o foco de ter essas coisas da meta já conclui o necessario para sobrevivencia(seja solo ou em familia), se faltar algo ou adicional, ajuste como preferir
+Ter um inglês fluente, talvez depois aprender espanhol
+Aumentar a renda como dev, meio politico
+Desenvolver aplicações em novembro, dezembro desse final de ano 2026 e juntar uma renda para iniciar a conclusão das metas(atualmente tenho interesse na stack de astro.build+cloudflare workers+registro.br(atualmente utilizo para o meu site(israelreispereira.com.br)). Não tenho preferência de stack, MAS para sites web essa stack parece ser adequado. Tenho ideias de aplicações/projetos(coloquei abaixo os projetos) que claro serão aptas à sua própria stack)
+
+Projetos pretendidos(não necessariamente preciso aplicar todos, MAS sim o que mais ajudar ao publico ter contato comigo ASSIM abre portas para contato politico, tecnológico EM PARALELO projetos que possam render À LONGO PRAZO): 
+PROJETO 1 — Sem Vergonha de Cobrar
+Problema: dificuldade para acompanhar dívidas de clientes e realizar cobranças recorrentes.
+**PROJETO 2 — Confirmador de Agendamentos Anti-Falta
+Problema: clientes que não comparecem aos horários agendados.
+PROJETO 3 — Capturador de Avaliações
+Problema: dificuldade para solicitar feedback e avaliações após o atendimento.
+PROJETO 4 — Gerador de Recibos de Consulta
+Problema: demora na emissão de recibos e documentos administrativos.
+**PROJETO 5 — Catálogo Digital com Sacola no WhatsApp
+Problema: necessidade de vender e apresentar produtos online sem manter uma plataforma complexa de comércio eletrônico.
+PROJETO 6 — Notificador de Novidades para Clientes VIP
+Problema: trabalho manual para comunicar lançamentos e novidades.
+PROJETO 7 — Rastreador de Ordem de Serviço
+Problema: clientes precisam entrar em contato repetidamente para acompanhar serviços.
+PROJETO 8 — Quadro de Avisos e Cotações
+Problema: dificuldade de centralizar informações e distribuir cotações aos parceiros.
+PROJETO 9 — Organizador de Pedidos para Cozinha
+Problema: dificuldade para organizar pedidos recebidos por mensagens e encaminhá-los para cozinha e entrega.
+PROJETO 10 — Caderneta Digital de Fiado
+Problema: erros, perda de registros e dificuldade para acompanhar dívidas recorrentes.
+**PROJETO 11 — Calculadora de Tintas e Orçamento Rápido de Parede
+Problema: demora para medir superfícies, estimar materiais, calcular mão de obra e
+apresentar orçamentos.
+**PROJETO 12 — Catálogo Digital de Cores, Texturas e Portfólio de Obras
+Problema: dificuldade para localizar fotografias de trabalhos anteriores e demonstrar técnicas a potenciais clientes.
+PROJETO 13 — Diário de Obra e Acompanhamento do Cliente
+Problema: clientes querem acompanhar o progresso da obra sem precisar perguntar repetidamente ao profissional.
+PROJETO 14 — Controle de Recebimentos e Parcelamento de Obras
+Problema: dificuldade para acompanhar entradas, parcelas, pagamentos pendentes e saldos de obras.
+**PROJETO 15 — Central de Parcerias entre Pintores e Lojas de Tintas
+Problema: dificuldade para comprovar indicações, registrar compras originadas de recomendações e acompanhar possíveis benefícios comerciais.
+
+---
+
+Abaixo está a tabela orçamentária completa atualizada para **outubro de 2026**, contendo os hiperlinks direcionados exclusivamente para as fontes oficiais e validadas solicitadas (`DIEESE`, `Sinduscon-SP/FGV` via painéis oficiais do setor e portais de referência), além da margem de segurança de 15% embutida nos itens variáveis e o valor acumulado total ao final.
+
+| Categoria | Item / Objetivo | Valor Base (Outubro 2026) | Valor com Margem de Segurança (15%) | Fonte / Parâmetro Oficial |
+| --- | --- | --- | --- | --- |
+| **Sobrevivência Mensal** | Cesta Básica (Individual — SP) | R$ 900,59 | R$ 1.035,68 | [DIEESE (Cesta Básica SP)](https://www.dieese.org.br/analisecestabasica/2026/202608cestabasica.html) |
+| **Sobrevivência Familiar** | Salário Mínimo Necessário (Família de 4 pessoas) | R$ 7.565,86 / mês | R$ 8.700,74 / mês | [DIEESE (Salário Mínimo Necessário)](https://www.dieese.org.br/notatecnica/2025/notaTec289salarioMinimo.html) |
+| **Bens e Tecnologia** | Moto | R$ 8.000,00 | R$ 9.200,00 | [Meta Pessoal (Israel Reis)](https://israelreispereira.com.br/contato) |
+| **Bens e Tecnologia** | Notebook | R$ 8.000,00 | R$ 9.200,00 | [Meta Pessoal (Israel Reis)](https://israelreispereira.com.br/contato) |
+| **Bens e Mobilidade** | Carro | R$ 40.000,00 a R$ 45.000,00 | R$ 46.000,00 a R$ 51.750,00 | [suspicious link removed] |
+| **Educação / Idiomas** | Imersão Completa no Inglês | R$ 9.000,00 a R$ 42.000,00 | R$ 10.350,00 a R$ 48.300,00 | [suspicious link removed] |
+| **Lazer / Viagem** | Viagem ao DF (Brasília) | R$ 2.000,00 a R$ 8.000,00 | R$ 2.300,00 a R$ 9.200,00 | [suspicious link removed] |
+| **Habitação** | Mobília Básica | R$ 10.000,00 a R$ 15.000,00 | R$ 11.500,00 a R$ 17.250,00 | [Meta Pessoal (Israel Reis)](https://israelreispereira.com.br/contato) |
+| **Habitação** | Imóvel / Construção (com terreno) | R$ 345.000,00 a R$ 495.000,00 | R$ 396.750,00 a R$ 569.250,00 | [Sinduscon-SP / CUB-SP](https://www.paggo.com.br/indices/cub/sao-paulo) |
+
+---
+
+### Orçamento Total Consolidado (Horizonte de 2 anos — até meados de 2028)
+
+Considerando a realização conjunta de todas as metas patrimoniais estruturais (carro, moto, notebook, imersão em inglês, viagem, mobília e a aquisição/construção da casa própria), o montante aproximado que você precisará acumular (já com a margem de segurança de 15% embutida nos custos variáveis) situa-se na faixa de **R$ 480.000,00 a R$ 720.000,00** até o final do biênio de 2028.

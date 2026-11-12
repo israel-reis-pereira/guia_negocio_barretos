@@ -1,0 +1,161 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Barretos Local — Prévia</title>
+<script src="https://cdn.jsdelivr.net/npm/papaparse@5.5.3/papaparse.min.js"></script>
+<style>
+:root{font-family:system-ui,sans-serif;color:#202923;background:#f6f7f4}
+*{box-sizing:border-box}body{margin:0}
+header,main{max-width:1080px;margin:auto;padding:24px}
+header{display:flex;justify-content:space-between;align-items:center;
+border-bottom:1px solid #dce2dc;background:#fff}
+h1{font-size:1.55rem;margin:0}h2{font-size:1.2rem}
+small,.muted{color:#68736b}
+.controls{display:flex;gap:10px;flex-wrap:wrap;margin:20px 0}
+input,select,button{font:inherit;padding:11px;border:1px solid #ccd5cc;
+border-radius:8px;background:white;color:inherit}
+input{flex:1;min-width:180px}button{cursor:pointer}
+button.primary{background:#235b42;color:white;border-color:#235b42}
+.stats{padding:16px;background:white;border:1px solid #dce2dc;border-radius:12px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:12px;margin-top:16px}
+article{background:white;border:1px solid #dce2dc;border-radius:12px;padding:17px}
+.tag{font-size:.8rem;background:#edf4ee;color:#235b42;padding:4px 8px;border-radius:20px}
+article h3{margin:14px 0 7px}
+.notice{padding:12px;border-radius:8px;background:#edf4ee;margin:12px 0}
+.error{background:#fff0ed;color:#8a291b}
+footer{padding:20px;color:#68736b;font-size:.85rem}
+</style>
+</head>
+<body>
+<header>
+  <div><h1>Barretos Local</h1><small>Diretório demonstrativo de empresas</small></div>
+  <span class="tag">MVP · Prévia</span>
+</header>
+<main>
+  <p class="muted">Descubra serviços e estabelecimentos de Barretos-SP.</p>
+  <div class="notice" id="status" role="status" aria-live="polite">
+    Dados fictícios para demonstração. Não são um catálogo real.
+  </div>
+  <section class="stats">
+    <strong id="count">0 estabelecimentos</strong>
+    <div class="controls">
+      <input id="search" placeholder="Buscar nome, categoria ou bairro"
+        aria-label="Buscar estabelecimentos">
+      <select id="category" aria-label="Filtrar por categoria">
+        <option value="">Todas as categorias</option>
+      </select>
+      <button id="clear">Limpar filtros</button>
+    </div>
+    <label for="csv">Importar CSV para pré-visualização:</label>
+    <div class="controls">
+      <input type="file" id="csv" accept=".csv,text/csv">
+    </div>
+    <small>Colunas esperadas: id,nome,categoria,bairro,site</small>
+  </section>
+  <section id="results" class="grid" aria-label="Estabelecimentos"></section>
+</main>
+<footer>Protótipo de interface. Verifique as fontes antes de publicar dados reais.</footer>
+<script>
+const demo = [
+ {id:"demo-1",nome:"Exemplo Café",categoria:"Alimentação",bairro:"Centro",site:""},
+ {id:"demo-2",nome:"Exemplo Oficina",categoria:"Automotivo",bairro:"Baroni",site:""},
+ {id:"demo-3",nome:"Exemplo Studio",categoria:"Beleza",bairro:"Nogueira",site:""}
+];
+let businesses = demo;
+const $ = id => document.getElementById(id);
+const normalize = value => String(value ?? "").trim();
+function render(){
+ const q = $("search").value.toLocaleLowerCase("pt-BR");
+ const cat = $("category").value;
+ const rows = businesses.filter(b =>
+  [b.nome,b.categoria,b.bairro].some(v =>
+   normalize(v).toLocaleLowerCase("pt-BR").includes(q)) &&
+  (!cat || b.categoria === cat));
+ $("count").textContent = `${rows.length} estabelecimento(s)`;
+ $("results").replaceChildren();
+ if(!rows.length){
+  const p=document.createElement("p");
+  p.textContent="Nenhum resultado. Remova filtros ou tente outra busca.";
+  $("results").append(p); return;
+ }
+ rows.forEach(b=>{
+  const card=document.createElement("article");
+  const tag=document.createElement("span"); tag.className="tag";
+  tag.textContent=b.categoria || "Sem categoria";
+  const title=document.createElement("h3"); title.textContent=b.nome;
+  const place=document.createElement("p");
+  place.textContent=b.bairro || "Bairro não informado";
+  const link=document.createElement("p");
+  if(b.site && /^https?:\/\//i.test(b.site)){
+   const a=document.createElement("a"); a.href=b.site;
+   a.textContent="Visitar site"; a.target="_blank";
+   a.rel="noopener noreferrer"; link.append(a);
+  }else link.textContent="Site não informado";
+  card.append(tag,title,place,link); $("results").append(card);
+ });
+}
+function setCategories(){
+ const select=$("category"), old=select.value;
+ select.replaceChildren(new Option("Todas as categorias",""));
+ [...new Set(businesses.map(b=>normalize(b.categoria)).filter(Boolean))]
+ .sort().forEach(c=>select.add(new Option(c,c)));
+ select.value=[...select.options].some(o=>o.value===old)?old:"";
+}
+["search","category"].forEach(id=>$(id).addEventListener("input",render));
+$("clear").addEventListener("click",()=>{
+ $("search").value=""; $("category").value=""; render();
+});
+$("csv").addEventListener("change",event=>{
+ const file=event.target.files?.[0]; if(!file)return;
+ if(file.size>5*1024*1024){
+  $("status").className="notice error";
+  $("status").textContent="Arquivo acima de 5 MB. Reduza o tamanho e tente novamente.";
+  return;
+ }
+ if(!window.Papa){
+  $("status").className="notice error";
+  $("status").textContent="Biblioteca CSV indisponível. Verifique a conexão.";
+  return;
+ }
+ Papa.parse(file,{header:true,skipEmptyLines:"greedy",
+  complete(result){
+   const required=["id","nome","categoria","bairro","site"];
+   const headers=result.meta.fields || [];
+   const missing=required.filter(k=>!headers.includes(k));
+   if(missing.length){
+    $("status").className="notice error";
+    $("status").textContent="Cabeçalhos ausentes: "+missing.join(", ");
+    return;
+   }
+   const errors=result.errors || [];
+   const rows=result.data.map(r=>({
+    id:normalize(r.id),nome:normalize(r.nome),
+    categoria:normalize(r.categoria),bairro:normalize(r.bairro),
+    site:normalize(r.site)
+   }));
+   const valid=rows.filter(r=>r.id && r.nome);
+   if(!valid.length){
+    $("status").className="notice error";
+    $("status").textContent="Nenhum registro válido. Confira ID e nome.";
+    return;
+   }
+   // Só substitui a demonstração após a validação básica.
+   businesses=valid; setCategories(); render();
+   $("status").className=errors.length?"notice error":"notice";
+   $("status").textContent=`Prévia: ${valid.length} válidos; `+
+    `${rows.length-valid.length} rejeitados; ${errors.length} erro(s) de parsing. `+
+    "Este protótipo substitui apenas os dados em memória, não publica arquivos.";
+  },
+  error(){
+   $("status").className="notice error";
+   $("status").textContent="Não foi possível ler o CSV. Tente outro arquivo.";
+  }
+ });
+});
+setCategories();render();
+</script>
+</body>
+</html>
